@@ -1,0 +1,74 @@
+/* General styling */
+.root {
+    -fx-font-family: Arial, sans-serif;
+    -fx-background-color: pink;
+}
+
+/* Thumbnail container */
+.thumbnail-container {
+    -fx-padding: 5px;
+    -fx-border-radius: 10px;
+    -fx-background-color: transparent;
+}
+
+/* Thumbnail image (hidden by default) */
+.thumbnail-image {
+    -fx-border-color: #f39c12;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+    -fx-cursor: hand;
+    -fx-background-color: #ecf0f1;
+    -fx-opacity: 0; /* Initially hidden */
+    -fx-transition: opacity 0.3s ease-in-out;
+}
+
+/* Show preview on hover */
+.thumbnail-container:hover .thumbnail-image {
+    -fx-opacity: 1;
+}
+
+/* Full image view styling */
+.full-image-view {
+    -fx-padding: 15px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10px;
+    -fx-border-color: #3498db;
+    -fx-border-width: 4px;
+}
+
+/* Navigation buttons */
+.nav-button {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 0);
+}
+
+/* Hover effect for navigation buttons */
+.nav-button:hover {
+    -fx-background-color: #16a085;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 5, 0, 0, 0);
+}
+
+/* Back button styling */
+.back-button {
+    -fx-background-color: #9b59b6;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px;
+    -fx-border-radius: 12px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 6, 0, 0, 0);
+}
+
+/* Hover effect for back button */
+.back-button:hover {
+    -fx-background-color: #8e44ad;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0, 0, 0);
+}
